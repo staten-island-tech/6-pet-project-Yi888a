@@ -20,8 +20,17 @@ class Player:
         self.post_moves = post_moves
         self.layups = layups
         self.free_throws = free_throws
+player_position = input("What position do you want to play? ")
 player_name = input("What is your player's name? ")
-player1 = Player(player_name, 0, 75, 190, 60, 65, 70, 75, 72, 68, 70, 72, 65, 60, 70, 65, 62, 68, 66)
+if player_position == 'PG':
+ player1 = Player(player_name, 0, 190, 180, 60, 70, 70, 70, 75, 80, 75, 75, 70, 55, 50, 35, 60, 75, 75)
+elif player_position == 'SG':
+     player1 = Player(player_name, 0, 195, 185, 70, 65, 75, 70, 70, 70, 80, 70, 65, 65, 65, 55, 65, 70, 80)
+elif player_position == 'SF':
+      player1 = Player(player_name, 0, 198, 190, 70, 65, 75, 70, 70, 70, 80, 70, 65, 65, 65, 55, 65, 70, 80)
+
+
+
 print(f"Player Name: {player1.name}, Overall Rating: {player1.overall}")
 print("What would you like to do next? (1) View Player Stats (2) Train Player (3) Scrim (4) Exit")
 choice = input("Enter your choice (1-4): ")
