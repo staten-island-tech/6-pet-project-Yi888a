@@ -28,6 +28,11 @@ elif player_position == 'SG':
      player1 = Player(player_name, 0, 195, 185, 70, 65, 75, 70, 70, 70, 80, 70, 65, 65, 65, 55, 65, 70, 80)
 elif player_position == 'SF':
       player1 = Player(player_name, 0, 198, 190, 70, 65, 75, 70, 70, 70, 80, 70, 65, 65, 65, 55, 65, 70, 80)
+elif player_position == "PF" :
+    player1 = Player(player_name, 0, 205, 230, 70, 65, 75, 70, 70, 70, 80, 70, 65, 65, 65, 55, 65, 70, 80)
+elif player_position == "C":
+     player1 = Player(player_name, 0, 215, 220, 70, 65, 75, 70, 70, 70, 80, 70, 65, 65, 65, 55, 65, 70, 80)
+     
 
 
 
@@ -37,7 +42,7 @@ choice = input("Enter your choice (1-4): ")
 if choice == '1':
     print(f"Player Stats for {player1.name}:")
     print(f"Height: {player1.height} Centimeters")
-    print(f"Weight: {player1.weight} Kilograms")
+    print(f"Weight: {player1.weight} LBs")
     print(f"Strength: {player1.strength}")
     print(f"Skills: {player1.skills}")
     print(f"Vertical: {player1.vertical} inches")
@@ -67,5 +72,11 @@ elif train_choice == '2':
         player1.on_ball_speed += 2
         player1.off_ball_speed += 2
         print(f"{player1.name}'s physical attributes have improved!")
-else:
-        print("Invalid choice.")
+elif choice == '3':
+    scrim_choice = input("(1) Check scrims avalible (2) Pickup Game")
+if input == '1':
+     print 
+     
+     
+elif choice == '4':
+     print ("Good Bye")
