@@ -74,8 +74,8 @@ elif train_choice == '2':
         print(f"{player1.name}'s physical attributes have improved!")
 elif choice == '3':
     scrim_choice = input("(1) Check scrims avalible (2) Pickup Game")
-if input == '1':
-     print 
+if scrim_choice == '1':
+     print ("")
      
      
 elif choice == '4':
